@@ -52,7 +52,7 @@
     text(
       font: headerFont,
       size: 32pt,
-      weight: "light",
+      weight: "bold",
       fill: regularColors.darkgray,
       str,
     )
@@ -61,7 +61,7 @@
     text(font: headerFont, size: 32pt, weight: "bold", str)
   }
   let headerInfoStyle(str) = {
-    text(size: 10pt, fill: accentColor, str)
+    text(size: 10pt, str)
   }
   let headerQuoteStyle(str) = {
     text(size: 10pt, weight: "medium", style: "italic", fill: accentColor, str)
@@ -142,7 +142,7 @@
     columns: 1fr,
     inset: 0pt,
     stroke: none,
-    row-gutter: 6mm,
+    row-gutter: 3mm,
     if nonLatin {
       headerFirstNameStyle(nonLatinName)
     } else [#headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(lastName)],
@@ -165,6 +165,7 @@
     stroke: none,
     column-gutter: 15pt,
     align: align + horizon,
+    
     {
       leftComp
     },

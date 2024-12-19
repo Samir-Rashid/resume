@@ -3,7 +3,7 @@
 */
 
 /* Packages */
-#import "./cv.typ": *
+#import "./cv_typ.typ": *
 #import "./letter.typ": *
 #import "./utils/lang.typ": isNonLatin
 #import "./utils/styles.typ": overwriteFonts
@@ -11,7 +11,7 @@
 /* Layout */
 #let cv(
   metadata,
-  profilePhoto: image("./template/src/avatar.png"),
+  profilePhoto: image("./cv_typ.typ"),
   doc,
 ) = {
   // Non Latin Logic
