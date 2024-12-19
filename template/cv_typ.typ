@@ -142,7 +142,7 @@
     columns: 1fr,
     inset: 0pt,
     stroke: none,
-    row-gutter: 3mm,
+    row-gutter: 2mm,
     if nonLatin {
       headerFirstNameStyle(nonLatinName)
     } else [#headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(lastName)],
@@ -155,7 +155,7 @@
     if displayProfilePhoto {
       box(profilePhoto, radius: 50%, clip: true)
     } else {
-      v(3.6cm)
+      // v(3.6cm) // this line was the culprit
     }
   }
 
@@ -249,8 +249,9 @@
     sectionTitleStyle(title, color: accentColor)
   } else {
     if highlighted {
-      sectionTitleStyle(highlightText, color: accentColor)
-      sectionTitleStyle(normalText, color: black)
+      sectionTitleStyle(title, color: accentColor)
+      // sectionTitleStyle(highlightText, color: accentColor)
+      // sectionTitleStyle(normalText, color: black)
     } else {
       sectionTitleStyle(title, color: black)
     }

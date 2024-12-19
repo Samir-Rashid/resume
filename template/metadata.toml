@@ -10,9 +10,9 @@ language = "en"
     awesome_color = "skyblue"
 
     # Skips are for controlling the spacing between sections and entries
-    before_section_skip = "1pt"
-    before_entry_skip = "1pt"
-    before_entry_description_skip = "1pt"
+    before_section_skip = "0pt"
+    before_entry_skip = "0pt"
+    before_entry_description_skip = "0pt"
 
     [layout.fonts]
         regular_fonts = ["Source Sans Pro", "Source Sans 3"]
@@ -47,26 +47,26 @@ language = "en"
     # The order of this section will affect how the entries are displayed
     # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
     [personal.info]
-        github = "mintyfrankie"
-        phone = "+33 6 12 34 56 78"
-        email = "john.doe@me.org"
-        linkedin = "johndoe"
+        github = "Samir-Rashid"
+        phone = "+1 (650) 575-3282"
+        email = "s3rashid@ucsd.edu"
+        linkedin = "samirrashid"
         # gitlab = "mintyfrankie"
-        # homepage = "jd.me.org"
+        homepage = "godsped.com"
         # orcid = "0000-0000-0000-0000"
         # researchgate = "John-Doe"
         # extraInfo = "I am a cool kid"
-        [personal.info.custom-1]
-            # image = "" # Example: image("./path/to/image.png")
-            awesomeIcon = "graduation-cap" # Example: "graduation-cap" see https://typst.app/universe/package/fontawesome/
-            text = "PhD"
-            link = "https://www.example.com"
+        # [personal.info.custom-1]
+        #     # image = "" # Example: image("./path/to/image.png")
+        #     awesomeIcon = "graduation-cap" # Example: "graduation-cap" see https://typst.app/universe/package/fontawesome/
+        #     text = "PhD"
+        #     link = "https://www.example.com"
 
 # add a new section if you want to include the language of your choice
 # i.e. [[lang.ru]]
 # each section must contains the following fields
 [lang.en]
-    header_quote = "Experienced Data Analyst looking for a full time job starting from now"
+    header_quote = "Software engineer interested in building observable, safe operating systems."
     cv_footer = "Curriculum vitae"
     letter_footer = "Cover letter"
 
