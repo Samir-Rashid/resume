@@ -10,11 +10,11 @@
 #cvSection("Skills")
 
 #cvSkill(
-  type: [Languages],
-  info: [ Python, Java, C, C++, Rust, JavaScript, TypeScript, SystemVerilog, Bash, LaTeX, MATLAB, R, Nix, Haskell, Google Apps Script],
+  type: [Languages #h(5pt)],
+  info: [Python, Java, C, C++, Rust, JavaScript, TypeScript, SystemVerilog, Bash, LaTeX, MATLAB, R, Nix, Haskell, Google Apps Script],
 )
 
 #cvSkill(
-  type: [Software],
-  info: [ PyTorch, React, SQL, AWS, Docker, NixOS, Linux, Unity, Onshape, Blender, KiCad, JUnit, Flask, pytest, Jest, GDB, ASP.NET, cProfile],
+  type: [Software #h(5pt)],
+  info: [PyTorch, React, SQL, AWS, Docker, NixOS, Linux, Unity, Onshape, Blender, KiCad, JUnit, Flask, pytest, Jest, GDB, ASP.NET, cProfile],
 )

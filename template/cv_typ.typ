@@ -458,7 +458,7 @@
   }
   let entryB2Style(str) = {
     align(
-      right,
+      right + top,
       text(size: 8pt, weight: "medium", fill: gray, style: "oblique", str),
     )
   }
