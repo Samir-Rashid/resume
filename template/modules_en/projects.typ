@@ -84,7 +84,7 @@
 )
 
 #projectEntry(
-  title: ["DIY projects"],
+  title: [DIY projects],
   society: ["N/A"],
   // logo: image("../src/logos/diy_projects.png"),
   date: [2023-present],

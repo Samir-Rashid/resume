@@ -596,9 +596,9 @@
   }
 
   table(
-    columns: (16%, 1fr),
+    columns: (10%, 1fr),
     inset: 0pt,
-    column-gutter: 10pt,
+    column-gutter: 0pt,
     stroke: none,
     skillTypeStyle(type), skillInfoStyle(info),
   )

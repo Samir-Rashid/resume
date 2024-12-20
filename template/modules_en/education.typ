@@ -13,7 +13,7 @@
   location: [San Diego, CA],
   // logo: image("../src/logos/ucsd.png"),
   description: list(
-    [*M.S. Computer Science in progress (graduating 2025)* Wireless Embedded & Operating Systems TA, lead mentor FIRST Robotics team 812],
+    [*M.S. Computer Science (graduating 2025)* Wireless Embedded & Operating Systems TA, lead mentor FIRST Robotics team 812],
     [*Relevant Coursework:* Graduate-Level Operating Systems, Compilers, Virtualization, Networking, Cryptography, Algebra, Analysis]
   ),
 )
