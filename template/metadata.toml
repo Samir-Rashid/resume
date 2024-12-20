@@ -11,7 +11,7 @@ language = "en"
 
     # Skips are for controlling the spacing between sections and entries
     before_section_skip = "-3pt"
-    before_entry_skip = "-7pt"
+    before_entry_skip = "-5pt"
     before_entry_description_skip = "-6pt"
 
     [layout.fonts]
