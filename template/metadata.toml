@@ -10,9 +10,9 @@ language = "en"
     awesome_color = "skyblue"
 
     # Skips are for controlling the spacing between sections and entries
-    before_section_skip = "0pt"
-    before_entry_skip = "0pt"
-    before_entry_description_skip = "0pt"
+    before_section_skip = "-3pt"
+    before_entry_skip = "-7pt"
+    before_entry_description_skip = "-6pt"
 
     [layout.fonts]
         regular_fonts = ["Source Sans Pro", "Source Sans 3"]
@@ -47,12 +47,12 @@ language = "en"
     # The order of this section will affect how the entries are displayed
     # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
     [personal.info]
+        homepage = "godsped.com"
         github = "Samir-Rashid"
+        linkedin = "samirrashid"
         phone = "+1 (650) 575-3282"
         email = "s3rashid@ucsd.edu"
-        linkedin = "samirrashid"
         # gitlab = "mintyfrankie"
-        homepage = "godsped.com"
         # orcid = "0000-0000-0000-0000"
         # researchgate = "John-Doe"
         # extraInfo = "I am a cool kid"

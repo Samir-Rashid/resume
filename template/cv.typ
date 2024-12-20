@@ -18,9 +18,9 @@
 )
 #importModules((
   "education",
+  "publications",
   "professional",
   "projects",
   // "certificates",
-  "publications",
   "skills",
 ))
