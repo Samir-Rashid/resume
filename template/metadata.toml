@@ -15,8 +15,9 @@ language = "en"
     before_entry_description_skip = "-6pt"
 
     [layout.fonts]
-        regular_fonts = ["Source Sans Pro", "Source Sans 3"]
-        header_font = "Roboto"
+        # Run typst fonts to see the fonts that Typst has discovered on your system
+        regular_fonts = ["Iosevka Aile Iaso", "Source Sans Pro", "Source Sans 3"]
+        header_font = "Iosevka Aile Iaso" # "Roboto"] # "SF NS"
 
     [layout.header]
         # Optional values: left, center, right
@@ -50,7 +51,7 @@ language = "en"
         homepage = "godsped.com"
         github = "Samir-Rashid"
         linkedin = "samirrashid"
-        phone = "+1 (650) 575-3282"
+        phone = "+1 (650) 762-9756"
         email = "s3rashid@ucsd.edu"
         # gitlab = "mintyfrankie"
         # orcid = "0000-0000-0000-0000"
