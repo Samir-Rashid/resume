@@ -74,7 +74,7 @@
       email: fa-envelope(),
       linkedin: fa-linkedin(),
       homepage: fa-pager(),
-      github: fa-square-github(),
+      github: fa-github(),
       gitlab: fa-gitlab(),
       orcid: fa-orcid(),
       researchgate: fa-researchgate(),
@@ -206,13 +206,14 @@
     text(size: 8pt, fill: rgb("#999999"), smallcaps(str))
   }
 
-  return table(
-    columns: (1fr, auto),
-    inset: -5pt,
-    stroke: none,
-    footerStyle([#firstName #lastName]), footerStyle(footerText),
-  )
-
+  if metadata.lang.at(metadata.language).enable_cv_footer { 
+    return table(
+      columns: (1fr, auto),
+      inset: -5pt,
+      stroke: none,
+      footerStyle([#firstName #lastName]), footerStyle(footerText),
+    )
+  }
 }
 
 /// Add the title of a section.

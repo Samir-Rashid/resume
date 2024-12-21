@@ -16,8 +16,8 @@ language = "en"
 
     [layout.fonts]
         # Run typst fonts to see the fonts that Typst has discovered on your system
-        regular_fonts = ["Iosevka Aile Iaso", "Source Sans Pro", "Source Sans 3"]
-        header_font = "Iosevka Aile Iaso" # "Roboto"] # "SF NS"
+        regular_fonts = [ "Source Sans Pro", "Source Sans 3"] # "Iosevka Aile Iaso", "JetBrains Mono",
+        header_font = "Roboto" # "SF NS"
 
     [layout.header]
         # Optional values: left, center, right
@@ -68,6 +68,7 @@ language = "en"
 # each section must contains the following fields
 [lang.en]
     header_quote = "Software engineer interested in building observable, safe operating systems."
+    enable_cv_footer = false
     cv_footer = "Curriculum vitae"
     letter_footer = "Cover letter"
 
