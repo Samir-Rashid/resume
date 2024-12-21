@@ -16,5 +16,5 @@
 
 #cvSkill(
   type: [Software #h(5pt)],
-  info: [PyTorch, React, SQL, AWS, Docker, NixOS, Linux, Unity, Onshape, Blender, KiCad, JUnit, Flask, pytest, Jest, GDB, ASP.NET, cProfile],
+  info: [PyTorch, React, SQL, AWS, Docker, NixOS, Linux, Unity, Onshape, Blender, KiCad, JUnit, Flask, pytest, Jest, GDB, cProfile],
 )

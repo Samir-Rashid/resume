@@ -140,7 +140,7 @@
 
   let makeHeaderNameSection() = table(
     columns: 1fr,
-    inset: 0pt,
+    inset: 1pt,
     stroke: none,
     row-gutter: 2mm,
     if nonLatin {
@@ -466,6 +466,7 @@
   // description
   let entryDescriptionStyle(str) = {
     text(
+      size:9pt,
       fill: regularColors.lightgray,
       // spacing:0em,
       {

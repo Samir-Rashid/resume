@@ -10,9 +10,9 @@ language = "en"
     awesome_color = "skyblue"
 
     # Skips are for controlling the spacing between sections and entries
-    before_section_skip = "-3pt"
-    before_entry_skip = "-5pt"
-    before_entry_description_skip = "-6pt"
+    before_section_skip = "0pt"
+    before_entry_skip = "-3pt"
+    before_entry_description_skip = "-5pt"
 
     [layout.fonts]
         # Run typst fonts to see the fonts that Typst has discovered on your system

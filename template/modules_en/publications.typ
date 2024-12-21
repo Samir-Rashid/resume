@@ -26,7 +26,7 @@
 #set par(
   justify: true,
   // leading: 0em,
-  spacing: 0.5em
+  spacing: 0.75em
 )
 
 #v(beforeEntryDescriptionSkip)
