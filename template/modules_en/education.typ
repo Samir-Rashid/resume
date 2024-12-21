@@ -1,32 +1,19 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.3": cvSection, cvEntry, hBar
+#import "../cv_typ.typ": cvSection, cvEntry, hBar
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 #let cvEntry = cvEntry.with(metadata: metadata)
 
-
 #cvSection("Education")
 
 #cvEntry(
-  title: [Master of Data Science],
-  society: [University of California, Los Angeles],
-  date: [2018 - 2020],
-  location: [USA],
-  logo: image("../src/logos/ucla.png"),
+  title: [*M.S. in CS | Double B.S. Math and Computer Science, Classical Studies Minor | GPA 3.9*],
+  society: [#link("https://www.ucsd.edu/")[University of California San Diego]],
+  date: [*Expected June 2025*],
+  location: [San Diego, CA],
+  // logo: image("../src/logos/ucsd.png"),
   description: list(
-    [Thesis: Predicting Customer Churn in Telecommunications Industry using Machine Learning Algorithms and Network Analysis],
-    [Course: Big Data Systems and Technologies #hBar() Data Mining and Exploration #hBar() Natural Language Processing],
-  ),
-)
-
-#cvEntry(
-  title: [Bachelors of Science in Computer Science],
-  society: [University of California, Los Angeles],
-  date: [2018 - 2020],
-  location: [USA],
-  logo: image("../src/logos/ucla.png"),
-  description: list(
-    [Thesis: Exploring the Use of Machine Learning Algorithms for Predicting Stock Prices: A Comparative Study of Regression and Time-Series Models],
-    [Course: Database Systems #hBar() Computer Networks #hBar() Software Engineering #hBar() Artificial Intelligence],
+    [*M.S. Computer Science (graduating 2025)* #link("https://cseweb.ucsd.edu/classes/wi25/cse222C-a/index.html")[Wireless Embedded] & #link("https://cseweb.ucsd.edu/classes/fa24/cse120-a/")[Operating Systems TA], lead mentor #link("https://www.themidnightmechanics.com/")[FIRST Robotics team 812]],
+    [*Relevant Coursework:* Graduate-Level Operating Systems, Compilers, Virtualization, Networking, Cryptography, Algebra, Analysis]
   ),
 )

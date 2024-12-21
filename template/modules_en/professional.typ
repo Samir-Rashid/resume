@@ -1,42 +1,46 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.3": cvSection, cvEntry
+#import "@preview/fontawesome:0.2.1": fa-github, fa-up-right-from-square
+#import "../cv_typ.typ": cvSection, cvEntry, 
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 #let cvEntry = cvEntry.with(metadata: metadata)
 
-
-#cvSection("Professional Experience")
-
-#cvEntry(
-  title: [Director of Data Science],
-  society: [XYZ Corporation],
-  logo: image("../src/logos/xyz_corp.png"),
-  date: [2020 - Present],
-  location: [San Francisco, CA],
-  description: list(
-    [Lead a team of data scientists and analysts to develop and implement data-driven strategies, develop predictive models and algorithms to support decision-making across the organization],
-    [Collaborate with executive leadership to identify business opportunities and drive growth, implement best practices for data governance, quality, and security],
-  ),
-  tags: ("Tags Example here", "Dataiku", "Snowflake", "SparkSQL"),
-)
+#cvSection("Experience")
 
 #cvEntry(
-  title: [Data Analyst],
-  society: [ABC Company],
-  logo: image("../src/logos/abc_company.png"),
-  date: [2017 - 2020],
-  location: [New York, NY],
+  title: [Research Software Engineer],
+  society: [#link("https://tockos.org/")[Tock Operating System] #link("https://github.com/tock/tock")[#fa-github()]],
+  // logo: image("../src/logos/tock_os.png"),
+  date: [June 2023 - Current],
+  location: [San Diego, CA],
   description: list(
-    [Analyze large datasets with SQL and Python, collaborate with teams to uncover business insights],
-    [Create data visualizations and dashboards in Tableau, develop and maintain data pipelines with AWS],
+    [#link("https://godsped.com/safe-firmware/")[Working on *formally verifying* a Rust-based OS to prove memory isolation guarantee can never be violated #fa-up-right-from-square()]],
+    [Contributed to networking stack in *Rust* by adding syscalls and designing interfaces to securely run OpenThread on Tock]
   ),
 )
 
 #cvEntry(
-  title: [Data Analysis Intern],
-  society: [PQR Corporation],
-  logo: image("../src/logos/pqr_corp.png"),
-  date: [Summer 2017],
-  location: [Chicago, IL],
-  description: list([Assisted with data cleaning, processing, and analysis using Python and Excel, participated in team meetings and contributed to project planning and execution]),
+  title: [Software Engineering Intern],
+  society: [#link("https://www.viasat.com/")[Viasat]],
+  // logo: image("../src/logos/viasat.png"),
+  date: [June - September 2023],
+  location: [Carlsbad, CA],
+  description: list(
+    [Ported *Linux drivers* to latest kernel for software router. Researched kernel changes to update deprecated function calls],
+    [Did bringup of drivers on OpenWRT based OS and debugged issues across the OS and networking stack by using strace and gdb],
+    [Maintain backwards compatibility of new OS by containerizing code with *LXC containers*]
+  ),
+)
+
+#cvEntry(
+  title: [Quality Engineering Intern],
+  society: [#link("https://x.com/home")[Twitter]],
+  // logo: image("../src/logos/twitter_remote.png"),
+  date: [September - December 2021],
+  location: [Remote],
+  description: list(
+    [Designed fault tolerant integration with testing framework that catalogues automated test results for manual testers],
+    [Used Java stream processing to aggregate test results in real time, enabling analytics on historical test results],
+    [Spoke with key stakeholders to design a solution. Worked with multiple teams to make sure solution can be adopted company-wide]
+  ),
 )

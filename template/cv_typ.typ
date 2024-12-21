@@ -52,7 +52,7 @@
     text(
       font: headerFont,
       size: 32pt,
-      weight: "light",
+      weight: "bold",
       fill: regularColors.darkgray,
       str,
     )
@@ -61,7 +61,7 @@
     text(font: headerFont, size: 32pt, weight: "bold", str)
   }
   let headerInfoStyle(str) = {
-    text(size: 10pt, fill: accentColor, str)
+    text(size: 10pt, str)
   }
   let headerQuoteStyle(str) = {
     text(size: 10pt, weight: "medium", style: "italic", fill: accentColor, str)
@@ -74,7 +74,7 @@
       email: fa-envelope(),
       linkedin: fa-linkedin(),
       homepage: fa-pager(),
-      github: fa-square-github(),
+      github: fa-github(),
       gitlab: fa-gitlab(),
       orcid: fa-orcid(),
       researchgate: fa-researchgate(),
@@ -140,9 +140,9 @@
 
   let makeHeaderNameSection() = table(
     columns: 1fr,
-    inset: 0pt,
+    inset: 1pt,
     stroke: none,
-    row-gutter: 6mm,
+    row-gutter: 2mm,
     if nonLatin {
       headerFirstNameStyle(nonLatinName)
     } else [#headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(lastName)],
@@ -155,7 +155,7 @@
     if displayProfilePhoto {
       box(profilePhoto, radius: 50%, clip: true)
     } else {
-      v(3.6cm)
+      // v(3.6cm) // this line was the culprit
     }
   }
 
@@ -165,6 +165,7 @@
     stroke: none,
     column-gutter: 15pt,
     align: align + horizon,
+    
     {
       leftComp
     },
@@ -205,13 +206,14 @@
     text(size: 8pt, fill: rgb("#999999"), smallcaps(str))
   }
 
-  return table(
-    columns: (1fr, auto),
-    inset: -5pt,
-    stroke: none,
-    footerStyle([#firstName #lastName]), footerStyle(footerText),
-  )
-
+  if metadata.lang.at(metadata.language).enable_cv_footer { 
+    return table(
+      columns: (1fr, auto),
+      inset: -5pt,
+      stroke: none,
+      footerStyle([#firstName #lastName]), footerStyle(footerText),
+    )
+  }
 }
 
 /// Add the title of a section.
@@ -248,8 +250,9 @@
     sectionTitleStyle(title, color: accentColor)
   } else {
     if highlighted {
-      sectionTitleStyle(highlightText, color: accentColor)
-      sectionTitleStyle(normalText, color: black)
+      sectionTitleStyle(title, color: accentColor)
+      // sectionTitleStyle(highlightText, color: accentColor)
+      // sectionTitleStyle(normalText, color: black)
     } else {
       sectionTitleStyle(title, color: black)
     }
@@ -307,9 +310,11 @@
       text(size: 8pt, weight: "medium", fill: gray, style: "oblique", str),
     )
   }
+  // description
   let entryDescriptionStyle(str) = {
     text(
       fill: regularColors.lightgray,
+      // spacing:0em,
       {
         v(beforeEntryDescriptionSkip)
         str
@@ -421,6 +426,164 @@
   entryTagListStyle(tags)
 }
 
+#let projectEntry(
+  title: "Title",
+  society: "Society",
+  date: "Date",
+  location: "Location",
+  description: "Description",
+  logo: "",
+  tags: (),
+  metadata: metadata,
+  awesomeColors: awesomeColors,
+) = {
+  let accentColor = setAccentColor(awesomeColors, metadata)
+  let beforeEntrySkip = eval(
+    metadata.layout.at("before_entry_skip", default: 1pt),
+  )
+  let beforeEntryDescriptionSkip = eval(
+    metadata.layout.at("before_entry_description_skip", default: 1pt),
+  )
+
+  let entryA1Style(str) = {
+    text(size: 10pt, weight: "bold", str)
+  }
+  let entryA2Style(str) = {
+    align(
+      right,
+      text(weight: "medium", fill: accentColor, style: "oblique", str),
+    )
+  }
+  let entryB1Style(str) = {
+    text(size: 8pt, fill: accentColor, weight: "medium", smallcaps(str))
+  }
+  let entryB2Style(str) = {
+    align(
+      right + top,
+      text(size: 8pt, weight: "medium", fill: gray, style: "oblique", str),
+    )
+  }
+  // description
+  let entryDescriptionStyle(str) = {
+    text(
+      size:9pt,
+      fill: regularColors.lightgray,
+      // spacing:0em,
+      {
+        v(beforeEntryDescriptionSkip)
+        str
+      },
+    )
+  }
+  let entryTagStyle(str) = {
+    align(center, text(size: 8pt, weight: "regular", str))
+  }
+  let entryTagListStyle(tags) = {
+    for tag in tags {
+      box(
+        inset: (x: 0.25em),
+        outset: (y: 0.25em),
+        fill: regularColors.subtlegray,
+        radius: 3pt,
+        entryTagStyle(tag),
+      )
+      h(5pt)
+    }
+  }
+
+  let ifSocietyFirst(condition, field1, field2) = {
+    return if condition {
+      field1
+    } else {
+      field2
+    }
+  }
+  let ifLogo(path, ifTrue, ifFalse) = {
+    return if metadata.layout.entry.display_logo {
+      if path == "" {
+        ifFalse
+      } else {
+        ifTrue
+      }
+    } else {
+      ifFalse
+    }
+  }
+  let setLogoLength(path) = {
+    return if path == "" {
+      0%
+    } else {
+      4%
+    }
+  }
+  let setLogoContent(path) = {
+    return if logo == "" [] else {
+      set image(width: 100%)
+      logo
+    }
+  }
+
+  v(beforeEntrySkip)
+  table(
+    columns: (ifLogo(logo, 4%, 0%), 1fr),
+    inset: 0pt,
+    stroke: none,
+    align: horizon,
+    column-gutter: ifLogo(logo, 4pt, 0pt),
+    setLogoContent(logo),
+    table(
+      columns: (1fr, auto),
+      inset: 0pt,
+      stroke: none,
+      row-gutter: 6pt,
+      align: auto,
+      {
+        entryA1Style(
+          ifSocietyFirst(
+            metadata.layout.entry.display_entry_society_first,
+            title,
+            title,
+          ),
+        )
+      },
+      {
+        entryA2Style(
+          ifSocietyFirst(
+            metadata.layout.entry.display_entry_society_first,
+            location,
+            date,
+          ),
+        )
+      },
+
+      {
+        v(0.5em)
+        text(
+          fill: regularColors.lightgray,
+          {
+              ifSocietyFirst(
+                metadata.layout.entry.display_entry_society_first,
+                entryDescriptionStyle(description),
+                entryDescriptionStyle(description),
+              )
+          }
+        )
+      },
+      {
+        entryB2Style(
+          ifSocietyFirst(
+            metadata.layout.entry.display_entry_society_first,
+            date,
+            location,
+          ),
+        )
+      },
+    ),
+  )
+  
+  entryTagListStyle(tags)
+}
+
 /// Add a skill to the CV.
 ///
 /// - type (str): The type of the skill. It is displayed on the left side.
@@ -435,9 +598,9 @@
   }
 
   table(
-    columns: (16%, 1fr),
+    columns: (10%, 1fr),
     inset: 0pt,
-    column-gutter: 10pt,
+    column-gutter: 0pt,
     stroke: none,
     skillTypeStyle(type), skillInfoStyle(info),
   )
