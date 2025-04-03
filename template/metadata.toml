@@ -67,7 +67,7 @@ language = "en"
 # i.e. [[lang.ru]]
 # each section must contains the following fields
 [lang.en]
-    header_quote = "Software engineer interested in building observable, safe operating systems."
+    header_quote = "Hardcore software engineer experienced in building observable, safe operating systems."
     enable_cv_footer = false
     cv_footer = "Curriculum vitae"
     letter_footer = "Cover letter"

@@ -12,7 +12,7 @@
 #cvSection("Projects")
 
 #projectEntry(
-  title: [#link("https://tuas.ucsd.edu/")[Triton Unmanned Aerial Systems #fa-github()]],
+  title: [#link("https://tritonuas.com/")[Triton Unmanned Aerial Systems #fa-github()]],
   society: ["N/A"],
   // logo: image("../src/logos/triton_uav.png"),
   date: [Dec 2020 - June 2024],
