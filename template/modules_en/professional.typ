@@ -8,6 +8,17 @@
 #cvSection("Experience")
 
 #cvEntry(
+  title: [Software Engineer],
+  society: [#link("https://www.starlink.com/")[SpaceX]],
+  date: [2025 - Current],
+  location: [Sunnyvale, CA],
+  description: list(
+  ),
+)
+
+#v(-6pt)
+
+#cvEntry(
   title: [Research Software Engineer],
   society: [#link("https://tockos.org/")[Tock Operating System] #link("https://github.com/tock/tock")[#fa-github()]],
   // logo: image("../src/logos/tock_os.png"),
@@ -41,6 +52,6 @@
   description: list(
     [Designed fault tolerant integration with testing framework that catalogues automated test results for manual testers],
     [Used Java stream processing to aggregate test results in real time, enabling analytics on historical test results],
-    [Spoke with key stakeholders to design a solution. Worked with multiple teams to make sure solution can be adopted company-wide]
+    [Spoke with key stakeholders to design a solution. Worked with multiple teams to ensure solution can be adopted company-wide]
   ),
 )

@@ -31,7 +31,7 @@
   set align(left)
   set page(
     paper: "a4",
-    margin: (left: 1.4cm, right: 1.4cm, top: 1cm, bottom: 1cm),
+    margin: (left: 1.4cm, right: 1.4cm, top: 0.75cm, bottom: 0.75cm),
     footer: _cvFooter(metadata),
   )
 

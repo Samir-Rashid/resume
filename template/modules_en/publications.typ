@@ -31,6 +31,8 @@
 
 #v(beforeEntryDescriptionSkip)
 
+Thesis (in progress): #link("https://github.com/Samir-Rashid/verus-tock")[*Formally Verified Timer Subsystem in Embedded OS*]
+
 #link("https://patpannuto.com/pubs/potyondy2024tabularasa.pdf")[*Tabula Rasa: Starting Safe Stays Safe*] \@ #link("https://www.tii.ae/workshop/spices")[SPICES 2024] (\**#text(fill: accentColor, "Best Paper")*, second author)
 
 Talk: #link("https://godsped.com/safe-firmware/")[*Provable Security in Embedded Systems: Verification Work in Tock OS*] \@ #link("https://www.osfc.io/")[OSFC 2024]

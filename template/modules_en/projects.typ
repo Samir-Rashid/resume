@@ -25,6 +25,15 @@
 )
 
 #projectEntry(
+  title: [#link("https://godsped.com/binary-room/")[Binary Translator RISC-V to ARM] #link("https://github.com/Samir-Rashid/binary-room")[#fa-github()]],
+  society: ["N/A"],
+  // logo: image("../src/logos/ide_profiler.png"),
+  date: [March 2025],
+  location: [Rust, Assembly],
+  description: list([Statically translate arbitrary binaries from subset of the riscv64 to aarch64 ISA, supporting control flow and system calls])
+)
+
+#projectEntry(
   title: [#link("https://github.com/Samir-Rashid/pytrail")[IDE Profiler Visualizer #fa-github()]],
   society: ["N/A"],
   // logo: image("../src/logos/ide_profiler.png"),
@@ -40,8 +49,8 @@
   date: [June 2023],
   location: [Rust, x86],
   description: list(
-    [Created compiler in Rust from Python subset to x86 assembly with a custom breakpoint debugger using ptrace],
-    [Supports IO, heap, garbage collection, comments, debug statements]
+    [Created compiler in Rust from Python subset to x86 assembly with garbage collector and ptrace breakpoint debugger],
+    // [Supports IO, heap, garbage collection, comments, debug statements]
   ),
 )
 
@@ -74,7 +83,7 @@
   location: [React],
   description: list(
     [Created online dashboard for analyzing the organization's event attendance data using *D3, Express, React, PostgreSQL*],
-    [Defined schema, implemented protected backend data processing routes, and #link("https://documenter.getpostman.com/view/13667686/TVmJiePG")[documented APIs using Postman #fa-up-right-from-square()]]
+    // [Defined schema, implemented protected backend data processing routes, and #link("https://documenter.getpostman.com/view/13667686/TVmJiePG")[documented APIs using Postman #fa-up-right-from-square()]]
   ),
 )
 
@@ -85,8 +94,7 @@
   date: [October 2020],
   location: [Python, Tkinter, Selenium WebDriver],
   description: list(
-    [Python script uses WebDriver and automatically scrapes UCSD course schedule to create an iCal file],
-    [Created native GUI for the program using Python and Tkinter]
+    [Created native GUI for Python script that scrapes course schedule with WebDriver to create iCal file],
   ),
 )
 
