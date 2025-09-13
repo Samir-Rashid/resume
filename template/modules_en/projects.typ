@@ -105,7 +105,7 @@
   date: [],
   location: [],
   description: list(
-    [Built: Homelab, PCB for wearable, pinball machine, headphones, mechanical keyboard, FPV quadcopter, home lab, analog turntable, trackball (WIP) — design CAD and electronics for ergonomic mouse, air filter — 3D printed and CADed to combat indoor wildfire smoke],
-    [Latin poetry reader (prosody) — Python script uses Text-to-Speech API and morphs audio to match dactylic hexameter rhythm],
-    [Ancient Greek keyboard firmware mod — Custom QMK firmware that natively supports Ancient Greek and its accents])
+    [Built: Homelab, smart eink water bottle, PCB for wearable, pinball machine, headphones, mechanical keyboard, FPV quadcopter, analog turntable, trackball (WIP)—design CAD and electronics for ergonomic mouse, air filter—3D printed and CAD for wildfire smoke],
+    [Latin poetry reader (prosody)—Python script uses Text-to-Speech API and morphs audio to match dactylic hexameter rhythm],
+    [Ancient Greek keyboard firmware mod—Custom QMK firmware that natively supports Ancient Greek and its accents])
 )

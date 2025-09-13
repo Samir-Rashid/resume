@@ -11,7 +11,7 @@
 
 #cvSkill(
   type: [Languages #h(5pt)],
-  info: [Python, Java, C, C++, Rust, JavaScript, TypeScript, SystemVerilog, Bash, LaTeX, MATLAB, R, Nix, Haskell, Google Apps Script],
+  info: [C, C++, Rust, Python, Java, JavaScript, TypeScript, SystemVerilog, Bash, LaTeX, MATLAB, R, Nix, Haskell, Google Apps Script],
 )
 
 #cvSkill(

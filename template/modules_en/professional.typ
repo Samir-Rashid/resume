@@ -8,8 +8,8 @@
 #cvSection("Experience")
 
 #cvEntry(
-  title: [Software Engineer],
-  society: [#link("https://www.starlink.com/")[SpaceX]],
+  title: [Software Engineer | Direct to Cell Core Network ],
+  society: [#link("https://www.starlink.com/")[Starlink]],
   date: [2025 - Current],
   location: [Sunnyvale, CA],
   description: list(
@@ -25,7 +25,7 @@
   date: [June 2023 - Current],
   location: [San Diego, CA],
   description: list(
-    [#link("https://godsped.com/safe-firmware/")[Working on *formally verifying* a Rust-based OS to prove memory isolation guarantee can never be violated #fa-up-right-from-square()]],
+    [#link("https://godsped.com/safe-firmware/")[*Formally verified* a Rust-based OS to prove memory isolation guarantee can never be violated #fa-up-right-from-square()]],
     [Contributed to networking stack in *Rust* by adding syscalls and designing interfaces to securely run OpenThread on Tock]
   ),
 )

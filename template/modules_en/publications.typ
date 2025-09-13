@@ -31,12 +31,13 @@
 
 #v(beforeEntryDescriptionSkip)
 
+// add thesis link
 Thesis (in progress): #link("https://github.com/Samir-Rashid/verus-tock")[*Formally Verified Timer Subsystem in Embedded OS*]
 
 #link("https://patpannuto.com/pubs/potyondy2024tabularasa.pdf")[*Tabula Rasa: Starting Safe Stays Safe*] \@ #link("https://www.tii.ae/workshop/spices")[SPICES 2024] (\**#text(fill: accentColor, "Best Paper")*, second author)
 
-Talk: #link("https://godsped.com/safe-firmware/")[*Provable Security in Embedded Systems: Verification Work in Tock OS*] \@ #link("https://www.osfc.io/")[OSFC 2024]
+Talk: #link("https://godsped.com/safe-firmware/")[*Provable Security in Embedded Systems: Verification Work in Tock OS*] \@ #link("https://www.osfc.io/")[OSFC 2024] #sym.arrow.r #link("https://sigops.org/s/conferences/sosp/2025/accepted.html")[SOSP 2025]
 
-Talk: #link("https://godsped.com/nix-homeserver/")[*The case for Nix on the home server*] \@ #link("https://www.socallinuxexpo.org")[SCaLE 2024] #link("https://www.youtube.com/watch?v=h8oyoDMUM2I")[*5,000 views!*]
+Talk: #link("https://godsped.com/nix-homeserver/")[*The case for Nix on the home server*] \@ #link("https://www.socallinuxexpo.org")[SCaLE 2024] #link("https://www.youtube.com/watch?v=h8oyoDMUM2I")[*6,000 views!*]
 
 #link("https://aclanthology.org/2024.nlp4pi-1.21.pdf")[*Inferring Mental Burnout Discourse Across Reddit Communities*] \@ #link("https://sites.google.com/view/nlp4positiveimpact/previous-workshops/emnlp-2024-workshop?authuser=0")[NLP for Positive Impact 2024]
